@@ -11,19 +11,19 @@ body{
     font-family: Helvetica, Arial, sans-serif;
 }
 header {
-    padding: 20 px 35px;
+    padding: 20px 35px;
     background-color: #39a6b2;
     display: flex;
     justify-content: space-between;
-    flex-wrap:wrap;
-   
+    flex-wrap: wrap;
 }
   header h1 { 
     font-weight: bold;
     font-size: 36px;
     color:#fce138;
-    margin: none;
- 
+    margin: 0;
+   
+
 
    }
   header a {
@@ -31,16 +31,17 @@ header {
       color: #fce138
   }
   header nav {
-     
-      margin: 7px 0;
+     margin: 7px 0;
     
   }
-  header nav ul li {
-      display:flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      list-style: none;
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
 
     
   }
@@ -48,6 +49,7 @@ header {
       margin: 0 30px;
       font-weight: lighter;
       font-size: 1.55vw;
+     
   }
 section{
      padding: 60px;
@@ -57,22 +59,37 @@ section{
 
   .hero{
       background-image: url("../images/hero-bg.jpg");
-      height: 600px;
+     display:flex;
+     justify-content: center;
+     flex-wrap:wrap;
       background-size: cover;
       background-position: center;
-      position: relative;
   }
  /* end hero asthetic*/
+ /*hero cta*/
+ .hero-cta{
+     width: 35%;
+     text-align: right;
+     margin:3.5%;
+     color: #fff;
+     font-size: 18px;
+     line-height: 1.3;
+ }
+.hero-cta h2{
+    font-style:italic;
+    font-size:55px;
+    color: #fce138;
+}
  /*form design*/
   .hero-form{
       background-color: #fce138;
       padding: 20px;
-      width: 500px;
+      width: 40%;
+      margin:3.5%;
       color: #024e76;
       border: solid 3px #024e76;
-      position: absolute;
-      bottom: 120;
-      right: 140px;}
+     
+  }
     
     .hero-form h3{
         font-size:24px;
@@ -237,20 +254,23 @@ section{
         }
 
 /*footer*/
-      }
+      
 footer{
-      background: #fce138;
+      background-color: #fce138;
       width: 100%;
       padding: 40px 35 px;
+      display:flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
      }
  footer h2 { 
-     display: inline;
+     
      color: #024e76;
      font-size: 30px;
      margin: 0px;
     }
  footer div {
-     float: right;
+    
      line-height: 1.5;
      text-align: right;
     }
